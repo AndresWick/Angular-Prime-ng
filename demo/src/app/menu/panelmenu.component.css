@@ -15,3 +15,8 @@
     background-color: #625a5a;
     color: #d19c9c;
 }
+
+img{
+    display:block;
+    margin:auto;
+}
