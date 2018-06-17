@@ -5,14 +5,12 @@ import {MenuItem} from 'primeng/api';
 @Component({
     selector:'menu',
     template: `
-        <h1>{{nombre}}</h1> 
-        <p-panelMenu [model]="items" [style]="{'width':'300px'}"></p-panelMenu>
-        `
+        <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
+        `,
+    styleUrls:['./panelmenu.component.css']
 })
 
-export class PanelMenu {
-    public nombre='Menú LMS';
-  
+export class PanelMenu {  
     items: MenuItem[];
 
     ngOnInit() {
