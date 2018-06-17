@@ -4,9 +4,7 @@ import {MenuItem} from 'primeng/api';
 
 @Component({
     selector:'menu',
-    template: `
-        <p-panelMenu [model]="items" [style]="{'width':'100%'}"></p-panelMenu>
-        `,
+    templateUrl: './panelmenu.component.html',
     styleUrls:['./panelmenu.component.css']
 })
 
@@ -16,23 +14,23 @@ export class PanelMenu {
     ngOnInit() {
         this.items = [
             {
-                label: 'File',
-                icon: 'fa fa-fw fa-file-o',
+                label: 'Cuenta',
+                icon: 'fa fa-fw fa-user',
                 items: [{
-                        label: 'New', 
-                        icon: 'fa fa-fw fa-plus',
+                        label: 'Configuración', 
+                        icon: 'fa fa-fw fa-gear',
                         items: [
                             {label: 'Project', icon: 'fa fa-fw fa-lock'},
                             {label: 'Other', icon: 'fa fa-fw fa-list'}
                         ]
                     },
-                    {label: 'Open', icon: 'fa fa-fw fa-external-link'},
+                    {label: 'Abrir', icon: 'fa fa-fw fa-external-link'},
                     {separator: true},
-                    {label: 'Quit', icon: 'fa fa-fw fa-close'}
+                    {label: 'Salir', icon: 'fa fa-fw fa-close'}
                 ]
             },
             {
-                label: 'Edit',
+                label: 'Cursos',
                 icon: 'fa fa-fw fa-edit',
                 items: [
                     {label: 'Undo', icon: 'fa fa-fw fa-mail-forward'},
@@ -40,7 +38,11 @@ export class PanelMenu {
                 ]
             },
             {
-                label: 'Help',
+                label: 'Calendario',
+                icon: 'fa fa-fw fa-calendar'
+            },
+            {
+                label: 'Ayuda',
                 icon: 'fa fa-fw fa-question',
                 items: [
                     {
@@ -66,27 +68,6 @@ export class PanelMenu {
                     ]}
                 ]
             },
-            {
-                label: 'Actions',
-                icon: 'fa fa-fw fa-gear',
-                items: [
-                    {
-                        label: 'Edit',
-                        icon: 'fa fa-fw fa-refresh',
-                        items: [
-                            {label: 'Save', icon: 'fa fa-fw fa-save'},
-                            {label: 'Update', icon: 'fa fa-fw fa-save'},
-                        ]
-                    },
-                    {
-                        label: 'Other',
-                        icon: 'fa fa-fw fa-phone',
-                        items: [
-                            {label: 'Delete', icon: 'fa fa-fw fa-minus'}
-                        ]
-                    }
-                ]
-            }
         ];
     }
 }
