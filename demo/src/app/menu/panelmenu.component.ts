@@ -15,6 +15,7 @@ export class PanelMenu {
         this.items = [
             {
                 label: 'Cuenta',
+                routerLink:'/cuenta',
                 icon: 'fa fa-fw fa-user',
                 items: [{
                         label: 'Configuración', 
@@ -31,6 +32,7 @@ export class PanelMenu {
             },
             {
                 label: 'Cursos',
+                routerLink:'/cursos',
                 icon: 'fa fa-fw fa-edit',
                 items: [
                     {label: 'Undo', icon: 'fa fa-fw fa-mail-forward'},
@@ -39,6 +41,7 @@ export class PanelMenu {
             },
             {
                 label: 'Calendario',
+                routerLink:'/calendario',
                 icon: 'fa fa-fw fa-calendar'
             },
             {
