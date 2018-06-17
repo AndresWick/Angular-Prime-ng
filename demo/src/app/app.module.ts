@@ -12,15 +12,16 @@ import {TabMenuModule} from 'primeng/tabmenu';
 
 
 import {PanelMenu} from './menu/panelmenu.component'
-import {TabView} from './tabview/tabview.component';
+import {Footer} from './footer/footer.component'
+
 
 import {AccordionModule} from 'primeng/accordion';     //accordion and accordion tab
 @NgModule({
   declarations: [
     AppComponent,
     PanelMenu,
-    TabView
-  ],
+    Footer
+      ],
   imports: [
     BrowserModule,
     ButtonModule,
@@ -33,6 +34,6 @@ import {AccordionModule} from 'primeng/accordion';     //accordion and accordion
     TabMenuModule
     ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
