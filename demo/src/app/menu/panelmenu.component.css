@@ -10,10 +10,57 @@
 }
 
 
-:host>.ui-state-default {
-    border: 1px solid #5c0404;
-    background-color: #625a5a;
+:host >>> .ui-state-default {
+    border: 1px solid #d5d5d5;
+    background-color: #4e5159;
     color: #d19c9c;
+}
+
+:host >>> .ui-state-active {
+    border-color: #2e3035;
+    background-color: #4e5159;
+    color: #fff;
+}
+
+:host >>> .ui-state-default a {
+    color: #fff;
+}
+
+:host >>> .ui-panelmenu .ui-panelmenu-header:not(.ui-state-active):hover a {
+    color: #2399e5;
+    background-color: #4e5159;
+    padding-left: 20px;
+    transition: padding-left .3s;
+}
+
+:host >>> .ui-panelmenu .ui-panelmenu-header.ui-state-active a {
+    border-color: #2e3035;
+    background: #2e3035;
+    color: #2399e5;
+    padding-left: 20px;
+    transition: padding-left .3s;
+}
+
+:host >>> .ui-widget-content {
+    border: 1px solid #2e3035;
+        border-top-style: solid;
+        border-top-width: 1px;
+    background-color: #2e3035;
+    color: #fff;
+}
+
+
+:host >>> .ui-panelmenu .ui-panelmenu-content .ui-menuitem-link:hover {
+    padding-left: 20px;
+    transition: padding-left .3s;
+    border-color: #c0c0c0;
+    background-color: #2e3035;
+    color: #2399e5;
+    border-color: transparent;
+}
+
+:host >>> .ui-panelmenu .ui-panelmenu-content .ui-menuitem-link {
+    color: #fff;
 }
 
 img{
